@@ -1,27 +1,27 @@
 import Nav from "./Nav.js";
 import NavItem from "./NavItem.js";
 import List from "./List.js";
-import MelonListItem from "./MelonListItem.js";
 import { useEffect, useState } from "react";
 import "./index.css";
+import RidiListItem from "./RidiListItem.js";
 
-function Melon() {
-  const [data, setData] = useState([]);
-
+function Ridi() {
+  const [ridiData, setRidiData] = useState([]);
   function DataFetch() {
     useEffect(() => {
       fetch(
-        "https://raw.githubusercontent.com/jaehoon-sim/newscrawler/main/melonTop100.json"
+        "https://raw.githubusercontent.com/jaehoon-sim/ridi_Crawler/master/ridi_rf_top60.json"
       )
         .then((res) => {
           return res.json();
         })
         .then((json_res) => {
-          setData(json_res);
+          setRidiData(json_res);
         });
     }, []);
   }
   DataFetch();
+
   return (
     <div className="w-1/3 px-8">
       <div className="divide-y divide-slate-300 shadow-xl rounded-xl border h-screen scrollbar-thin scrollbar-thumb-indigo-300 scrollbar-track-indigo-100 overflow-y-scroll scrollbar-thumb-rounded-full scrollbar-track-rounded-full">
@@ -33,12 +33,12 @@ function Melon() {
           <NavItem href="#">Monthly</NavItem>
         </Nav>
         <List>
-          {data.map((item) => (
-            <MelonListItem key={item.순위} song={item.곡명} props={item} />
+          {ridiData.map((item) => (
+            <RidiListItem key={item.index} song={item.title} props={item} />
           ))}
         </List>
       </div>
     </div>
   );
 }
-export default Melon;
+export default Ridi;
