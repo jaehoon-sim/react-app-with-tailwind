@@ -1,8 +1,8 @@
 import "./index.css";
-import Melon from "./Melon";
-import Header from "./Header";
-import Ridi from "./Ridi";
-import Series from "./Series";
+import Melon from "./components/Melon";
+import Header from "./components/Header";
+import Ridi from "./components/Ridi";
+import Series from "./components/Series";
 
 function App() {
   return (
@@ -10,7 +10,7 @@ function App() {
       <div>
         <Header />
       </div>
-      <div className="flex px-10 flex-row justify-between">
+      <div className="w-auto px-10 lg:flex">
         <Melon />
         <Ridi />
         <Series />

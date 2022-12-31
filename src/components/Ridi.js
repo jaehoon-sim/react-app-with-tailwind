@@ -1,8 +1,7 @@
 import Nav from "./Nav.js";
 import NavItem from "./NavItem.js";
-import List from "./List.js";
+import List from "../List.js";
 import { useEffect, useState } from "react";
-import "./index.css";
 import RidiListItem from "./RidiListItem.js";
 import logo from "./ridi.svg";
 
@@ -24,9 +23,9 @@ function Ridi() {
   DataFetch();
 
   return (
-    <div className="w-1/3 px-8">
+    <div className="w-128 px-8 truncate lg:w-full">
       <img src={logo} alt="logo" className="h-20 w-20 pt-3" />
-      <div className="divide-y divide-slate-300 shadow-xl rounded-xl border h-screen scrollbar-thin scrollbar-thumb-indigo-300 scrollbar-track-indigo-100 overflow-y-scroll scrollbar-thumb-rounded-full scrollbar-track-rounded-full">
+      <div className="divide-y divide-slate-300 shadow-xl rounded-xl border h-screen scrollbar-thin scrollbar-none scrollbar-thumb-indigo-300 scrollbar-track-indigo-100 overflow-y-scroll scrollbar-thumb-rounded-full scrollbar-track-rounded-full">
         <Nav>
           <NavItem href="#" isActive>
             Daily
