@@ -128,7 +128,7 @@ export default function Header() {
                       "group inline-flex items-center rounded-md bg-white text-base font-medium hover:text-gray-900 focus:outline-none focus:ring-2 focus:ring-indigo-500 focus:ring-offset-2"
                     )}
                   >
-                    <span>Solutions</span>
+                    <span>Section1</span>
                     <ChevronDownIcon
                       className={classNames(
                         open ? "text-gray-600" : "text-gray-400",
@@ -198,13 +198,13 @@ export default function Header() {
               href="#"
               className="text-base font-medium text-gray-500 hover:text-gray-900"
             >
-              Pricing
+              Section2
             </a>
             <a
               href="#"
               className="text-base font-medium text-gray-500 hover:text-gray-900"
             >
-              Docs
+              Section3
             </a>
 
             <Popover className="relative">
@@ -216,7 +216,7 @@ export default function Header() {
                       "group inline-flex items-center rounded-md bg-white text-base font-medium hover:text-gray-900 focus:outline-none focus:ring-2 focus:ring-indigo-500 focus:ring-offset-2"
                     )}
                   >
-                    <span>More</span>
+                    <span>Section4</span>
                     <ChevronDownIcon
                       className={classNames(
                         open ? "text-gray-600" : "text-gray-400",

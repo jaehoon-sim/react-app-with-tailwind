@@ -2,7 +2,7 @@ import "./index.css";
 import Melon from "./Melon";
 import Header from "./Header";
 import Ridi from "./Ridi";
-import Kakao from "./Kakao";
+import Series from "./Series";
 
 function App() {
   return (
@@ -10,10 +10,10 @@ function App() {
       <div>
         <Header />
       </div>
-      <div className="flex p-10 flex-row justify-between">
+      <div className="flex px-10 flex-row justify-between">
         <Melon />
         <Ridi />
-        <Kakao />
+        <Series />
       </div>
     </div>
   );
