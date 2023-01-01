@@ -7,13 +7,11 @@ import Series from "./components/Series";
 function App() {
   return (
     <div>
-      <div>
-        <Header />
-      </div>
-      <div className="w-auto px-10 lg:flex">
-        <Melon />
+      <div>{/* <Header /> */}</div>
+      <div className="w-auto pl-5 lg:flex lg:px-10">
         <Ridi />
         <Series />
+        <Melon />
       </div>
     </div>
   );

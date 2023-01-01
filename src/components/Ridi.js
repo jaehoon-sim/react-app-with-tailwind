@@ -23,7 +23,7 @@ function Ridi() {
   DataFetch();
 
   return (
-    <div className="w-128 px-8 truncate lg:w-full">
+    <div className="w-80 px-3 truncate lg:w-full">
       <img src={logo} alt="logo" className="h-20 w-20 pt-3" />
       <div className="divide-y divide-slate-300 shadow-xl rounded-xl border h-screen scrollbar-thin scrollbar-none scrollbar-thumb-indigo-300 scrollbar-track-indigo-100 overflow-y-scroll scrollbar-thumb-rounded-full scrollbar-track-rounded-full">
         <Nav>

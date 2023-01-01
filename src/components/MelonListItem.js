@@ -8,12 +8,16 @@ export default function MelonListItem({ props }) {
         height="88"
         className="flex-none rounded-md bg-slate-100"
       />
+      {/* 팝오버열렸을때 relative 제거 */}
       <div className="min-w-0 relative flex-auto">
-        <h2 className="font-semibold text-slate-900 truncate pr-20">
-          {props.곡명}
-        </h2>
+        <a href={props.상세정보} target="_blank" rel="noopener noreferrer">
+          <h2 className="font-semibold text-slate-900 truncate pr-10">
+            {props.곡명}
+          </h2>
+        </a>
         <dl className="mt-2 flex flex-wrap text-sm leading-6 font-medium">
           <div className="absolute top-0 right-0 flex items-center space-x-1">
+            {/* 팝오버열렸을때 invisible */}
             <dt className="text-sky-500">
               <span className="sr-only">Star rating</span>
               <svg width="16" height="20" fill="currentColor">
