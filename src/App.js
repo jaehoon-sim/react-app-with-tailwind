@@ -4,7 +4,7 @@ import Melon from "./components/Melon";
 import Ridi from "./components/Ridi";
 import Series from "./components/Series";
 import Kakao from "./components/Kakao";
-// import Joara from "./components/Joara";
+import Joara from "./components/Joara";
 
 function App() {
   return (
@@ -13,7 +13,7 @@ function App() {
         <Ridi />
         <Series />
         <Kakao />
-        {/* <Joara /> */}
+        <Joara />
         <Melon />
       </div>
     </div>
