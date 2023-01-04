@@ -27,7 +27,7 @@ export default function RidiListItem({ props }) {
           <div>
             <dt className="sr-only">Rating</dt>
             <dd className="px-1.5 ring-1 ring-slate-200 rounded">
-              {props.star}
+              {props.index}
             </dd>
           </div>
           <div className="ml-2">
