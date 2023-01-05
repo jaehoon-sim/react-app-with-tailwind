@@ -10,7 +10,7 @@ export default function RidiListItem({ props }) {
             />
             <div className="min-w-0 relative flex-auto">
                 <a
-                    href={props.url}
+                    href={props.link}
                     target="_blank"
                     rel="noopener noreferrer">
                     <h2 className="font-semibold text-slate-900 truncate pr-10">
@@ -33,7 +33,7 @@ export default function RidiListItem({ props }) {
                     <div>
                         <dt className="sr-only">Rating</dt>
                         <dd className="px-1.5 ring-1 ring-slate-200 rounded">
-                            {props.ratings[4].rating}
+                            {props.rank}
                         </dd>
                     </div>
                     <div className="ml-2">
