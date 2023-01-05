@@ -35,7 +35,7 @@ function Kakao() {
         </Nav>
         <List>
           {data.map((item) => (
-            <KakaoListItem key={item.index} song={item.title} props={item} />
+            <KakaoListItem key={item.book.id} props={item} />
           ))}
         </List>
       </div>
