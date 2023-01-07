@@ -20,6 +20,7 @@ function App() {
         <Kakao />
         <Joara />
         {/* <Melon /> */}
+        <span>전체열기</span>
       </div>
     </div>
   );
