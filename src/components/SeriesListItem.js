@@ -10,7 +10,7 @@ export default function SeriesListItem({ props }) {
       />
       <div className="min-w-0 relative flex-auto">
         <a href={props.url} target="_blank" rel="noopener noreferrer">
-          <h2 className="font-semibold text-slate-900 truncate pr-10">
+          <h2 className="font-semibold text-slate-900 truncate w-40">
             {props.title}
           </h2>
         </a>
@@ -32,7 +32,6 @@ export default function SeriesListItem({ props }) {
           </div>
           <div className="ml-2">
             <dt className="sr-only">Year</dt>
-            <dd>2022</dd>
           </div>
           <div>
             <dt className="sr-only">Genre</dt>

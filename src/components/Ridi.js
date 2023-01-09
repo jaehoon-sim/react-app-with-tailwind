@@ -11,7 +11,7 @@ function Ridi() {
   function DataFetch() {
     useEffect(() => {
       fetch(
-        "https://raw.githubusercontent.com/jaehoon-sim/ridi_Crawler/master/ridi_rf_top60.json"
+        "https://raw.githubusercontent.com/jaehoon-sim/ridi_Crawler/master/ridi.json"
       )
         .then((res) => {
           return res.json();
@@ -28,20 +28,19 @@ function Ridi() {
   return (
     <div>
       {show ? (
-        <div className="w-80 px-3 truncate lg:w-full">
-          <img src={logo} alt="logo" className="h-20 w-20 pt-3" />
-          <span onClick={ClickHandle}>접기</span>
-          <div className="divide-y divide-slate-300 shadow-xl rounded-xl border h-screen scrollbar-thin scrollbar-none scrollbar-thumb-indigo-300 scrollbar-track-indigo-100 overflow-y-scroll scrollbar-thumb-rounded-full scrollbar-track-rounded-full">
+        <div className="truncate lg:w-full">
+          <img src={logo} alt="logo" className="h-10 mt-6 mb-4" />
+          <div className="divide-y divide-slate-300 shadow-xl w-90 rounded-xl border h-screen scrollbar-thin scrollbar-none scrollbar-thumb-indigo-300 scrollbar-track-indigo-100 overflow-y-scroll scrollbar-thumb-rounded-full scrollbar-track-rounded-full">
             <Nav>
-              <NavItem href="#" isActive>
-                Daily
+              <NavItem isActive>
+                <span onClick={ClickHandle}>접기</span>
               </NavItem>
-              <NavItem href="#">Weekly</NavItem>
-              <NavItem href="#">Monthly</NavItem>
+              {/* <NavItem href="#">Weekly</NavItem>
+              <NavItem href="#">Monthly</NavItem> */}
             </Nav>
             <List>
               {ridiData.map((item) => (
-                <RidiListItem key={item.book.bookId} props={item.book} />
+                <RidiListItem key={item.book.book_id} props={item.book} />
               ))}
             </List>
           </div>

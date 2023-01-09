@@ -8,6 +8,7 @@ module.exports = {
         "3xl": "1650px",
       },
       width: {
+        90: "22rem",
         128: "40rem",
       },
     },

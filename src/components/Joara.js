@@ -28,16 +28,15 @@ function Joara() {
   return (
     <div>
       {show ? (
-        <div className="w-80 px-3 truncate lg:w-full">
+        <div className="truncate lg:w-full">
           <img src={logo} alt="logo" className="h-10 mt-6 mb-4" />
-          <span onClick={ClickHandle}>접기</span>
-          <div className="divide-y divide-slate-300 shadow-xl rounded-xl border h-screen scrollbar-thin scrollbar-none scrollbar-thumb-indigo-300 scrollbar-track-indigo-100 overflow-y-scroll scrollbar-thumb-rounded-full scrollbar-track-rounded-full">
+          <div className="divide-y divide-slate-300 shadow-xl rounded-xl border w-90 h-screen scrollbar-thin scrollbar-none scrollbar-thumb-indigo-300 scrollbar-track-indigo-100 overflow-y-scroll scrollbar-thumb-rounded-full scrollbar-track-rounded-full">
             <Nav>
-              <NavItem href="#" isActive>
-                Daily
+              <NavItem isActive>
+                <span onClick={ClickHandle}>접기</span>
               </NavItem>
-              <NavItem href="#">Weekly</NavItem>
-              <NavItem href="#">Monthly</NavItem>
+              {/* <NavItem href="#">Weekly</NavItem>
+              <NavItem href="#">Monthly</NavItem> */}
             </Nav>
             <List>
               {data.map((item) => (

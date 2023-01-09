@@ -15,12 +15,12 @@ function App() {
 
   return (
     <div>
-      <div className="w-auto pl-5 lg:flex lg:px-10">
+      <div className="w-auto ml-1 px-2 md:flex justify-between">
+        <Joara />
+        <Kakao />
+        <Million />
         <Ridi />
         <Series />
-        <Kakao />
-        <Joara />
-        <Million />
         {/* <span>전체열기</span> */}
       </div>
     </div>

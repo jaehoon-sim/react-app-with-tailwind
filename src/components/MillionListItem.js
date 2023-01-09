@@ -10,7 +10,7 @@ export default function MillionListItem({ props }) {
       />
       <div className="min-w-0 relative flex-auto">
         <a href={props.link} target="_blank" rel="noopener noreferrer">
-          <h2 className="font-semibold text-slate-900 truncate pr-10">
+          <h2 className="font-semibold text-slate-900 truncate w-40">
             {props.title}
           </h2>
         </a>
@@ -32,7 +32,6 @@ export default function MillionListItem({ props }) {
           </div>
           <div className="ml-2">
             <dt className="sr-only">Year</dt>
-            <dd>2022</dd>
           </div>
           <div>
             <dt className="sr-only">Genre</dt>
@@ -46,7 +45,7 @@ export default function MillionListItem({ props }) {
               >
                 <circle cx="1" cy="1" r="1" />
               </svg>
-              {props.category_ko_name}
+              {props.eventLog.eventMeta.subcategory}
             </dd>
           </div>
           <div>
